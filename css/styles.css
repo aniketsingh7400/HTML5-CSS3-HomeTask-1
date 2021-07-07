@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+/* ################# Header ######################### */
+
+header {
+    height: 130px;
+    background-color: #263852;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#head {
+    width: 17em;
+    background-color: white;
+    color: #263852;
+    padding: 10px 20px;
+    text-align: center;
+    border: 3px solid #d35d47;
+    border-radius: 5px;
+}
+
+#head-content-one {
+    letter-spacing: 0.1em;
+}
+
+#head-content-two {
+    letter-spacing: 0.05em;
+    margin-top: 3px;
+}
+
+/* ################# Categories ######################### */
+
+#categories {
+    margin: 3.5% 3.5%;
+    height: 6.5em;
+    border-bottom: 1px solid #000;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ################# Category - Section 1 ######################### */
+
+#category-one {
+    padding-left: 0.4rem;
+    width: 27%;
+}
+
+#category-one-heading {
+    font-size: 0.9rem;
+    font-weight: bolder;
+    letter-spacing: 0.1em;
+    padding-bottom: 1.2rem;
+}
+
+#select-category {
+    width: 100%;
+    height: 3em;
+    border-radius: 0;
+    border-color: #000;
+    padding-left: 0.5rem;
+}
+
+/* ################# Category - Section 2 ######################### */
+
+#category-two {
+    width: 33%;
+}
+
+#category-two-heading {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 2.5rem;
+    letter-spacing: 0.1em;
+    color: #263852;
+}
+
+/* ################# Category - Section 3 ######################### */
+
+#category-three {
+    width: 27%;
+    padding-right: 0.4rem;
+}
+
+#subscribe {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#category-three-heading {
+    font-size: 0.9rem;
+    font-weight: bolder;
+    letter-spacing: 0.1em;
+    padding-bottom: 1.2rem;
+}
+
+#email {
+    width: 65%;
+    height: 2.8em;
+    border-radius: 0;
+    border: 1px solid #000;
+    padding-left: 1rem;
+}
+
+#button {
+    width: 35%;
+    height: 2.8em;
+    border-radius: 0;
+    border: none;
+    color: #fff;
+    background-color: #000;
+}
+
+#button:hover {
+    cursor: pointer;
+    border: 1px solid #000;
+    border-left: none;
+    background-color: #263852;
+}
+
+/* ################# Articles ######################### */
+
+article {
+    display: flex;
+    margin: 3.5% 3.5%;
+    margin-right: 11rem;
+    padding-left: 0.4rem;
+}
+
+#article-one, #article-two {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #ccc
+}
+
+.image {
+    display:flex;
+    align-items: center;
+}
+
+img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-color: #ccc;
+    margin-right: 2rem;
+}
+
+.description {
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+.article-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #263852;
+}
+
+.article-publish-date {
+    font-size: smaller;
+}
+
+span {
+    color: #464547;
+}
+
+.article-description {
+    text-align: justify;
+}
+
+.article-button {
+    font-size: 0.9rem;
+    height: 2.8em;
+    border-radius: 0;
+    border: none;
+    padding: 0 1rem;
+    color: #fff;
+    background-color: #d35d47;
+}
+
+.article-button:hover {
+    cursor: pointer;
+    background-color: #263852;
+}
+
+/* ################# Footer ######################### */
+
+main {
+    margin-bottom: 5rem;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #263852;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+/* ################# Screen between 769px - 1024px ######################### */
+
+@media screen and (max-width: 1024px) {
+    
+    article {
+        margin-right: 12%;
+    }
+
+    .article-description {
+        font-size: 0.85rem;
+    }
+
+}
+
+/* ################# Screen between 481px - 768px ######################### */
+
+@media screen and (max-width: 768px) {
+
+    header {
+        height: 100px;
+    }
+    
+    #head {
+        width: 12em;
+    }
+    
+    #head-content-one {
+        font-size: 1.2rem;
+    }
+    
+    #head-content-two {
+        font-size: 0.65rem;
+    }
+
+    #categories {
+        align-items: center;
+    }
+
+    #category-one {
+        width: 33%;
+    }
+    
+    #category-one-heading {
+        font-size: 0.83rem;
+    }
+    
+    #select-category {
+        height: 2.5em;
+    }
+    
+    #category-two-heading {
+        padding-top: 3.4rem;
+        font-size: 1.2rem;
+    }
+
+    #subscribe {
+        flex-direction: column;
+    }
+
+    #category-three {
+        width: 33%;
+    }
+    
+    #category-three-heading {
+        font-size: 0.83rem;
+        padding-bottom: 0.5rem;
+    }
+    
+    #email {
+        width: 100%;
+        height: 2.5em;
+    }
+    
+    #button {
+        width: 100%;
+        height: 2.5em;
+    }
+    
+    article {
+        margin-right: 3.5%;
+    }
+
+    img {
+        font-size: 0.8rem;
+        width: 120px;
+        height: 120px;
+        background-color: #ccc;
+        margin-right: 1rem;
+    }
+    
+    .description {
+        justify-content: space-around;
+        height: 14.5rem;
+    }
+    
+    .article-title {
+        font-size: 1.1rem;
+    }
+
+    .article-publish-date {
+        font-size: 0.8rem;
+    }
+
+    .article-button {
+        font-size: 0.8rem;
+        height: 2.5em;
+    }
+
+    footer p {
+        color: #fff;
+        font-size: 0.8rem;
+    }
+}
+
+/* ################# Screen below 480px ######################### */
+
+@media screen and (max-width: 480px) {
+
+    #categories {
+        height: 12em;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    #category-one {
+        width: 100%;
+        padding: 0.1rem 0.4rem;
+    }
+    
+    #category-one-heading {
+        padding-bottom: 0.7rem;
+        font-size: 0.83rem;
+    }
+    
+    #select-category {
+        height: 2.5em;
+    }
+    
+    #category-two {
+        width: 100%;
+        order: 3;
+        padding-top: 1rem;
+    }
+    
+    #category-two-heading {
+        padding-top: 0rem;
+    }
+
+    #category-three {
+        padding: 0.1rem 0.4rem;
+        padding-top: 1rem;
+        width: 100%;
+    }
+
+    #subscribe {
+        flex-direction: row;
+    }
+    
+    #email {
+        width: 70%;
+    }
+    
+    #button {
+        width: 30%;
+    }
+    
+    article {
+        display: flex;
+        flex-direction: column;
+        padding-right: 0.4rem;
+    }
+
+    .image {
+        justify-content: center;
+    }
+    
+    img {
+        width: 150px;
+        height: 150px;
+        margin-right: 0rem;
+    }
+
+    .description {
+        height: 19rem;
+    }
+}
